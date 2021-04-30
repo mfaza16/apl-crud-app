@@ -16,7 +16,7 @@ exports.create = (req,res)=>{
         gender: req.body.gender,
         status : req.body.status
     })
-        .save(user)
+        user.save()
         .then(data => {
             //res.send(data)
             res.redirect('/add-employee');
